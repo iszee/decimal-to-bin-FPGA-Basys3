@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1543649118">
+  <File Type="RDS-DCP" Name="seven_seg_decimal.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="seven_seg_decimal_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="seven_seg_decimal_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="seven_seg_decimal.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RDS-RDS" Name="seven_seg_decimal.vds"/>
+  <File Type="RDS-UTIL" Name="seven_seg_decimal_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="seven_seg_decimal_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="seven_seg_decimal_timing_summary_synth.pb"/>
+  <File Type="VDS-HWDEF" Name="seven_seg_decimal.hwdef"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/seven_seg_decimal.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Isuru Nanayakkara/Desktop/seven_seg_decimal.v"/>
+        <Attr Name="ImportTime" Val="1543340164"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="seven_seg_decimal"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/constr.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Isuru Nanayakkara/Desktop/constr.xdc"/>
+        <Attr Name="ImportTime" Val="1543340254"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
